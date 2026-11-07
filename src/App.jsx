@@ -1,9 +1,24 @@
-function App() {
+import { Route, Routes } from 'react-router-dom'
+import NavBar from './components/NavBar.jsx'
+import AboutPage from './pages/AboutPage.jsx'
+import HomePage from './pages/HomePage.jsx'
+import NotFoundPage from './pages/NotFoundPage.jsx'
+import TaskDetailPage from './pages/TaskDetailPage.jsx'
+import TasksPage from './pages/TasksPage.jsx'
+
+function App () {
   return (
-    <main className="p-8">
-      <h1 className="text-3xl font-bold text-indigo-600">TaskBoard</h1>
-      <p className="mt-2 text-slate-600">Tailwind is working.</p>
+    <div className="min-h-screen bg-slate-50 text-slate-900"><NavBar />
+    <main>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/tasks" element={<TasksPage />} />
+        <Route path="/tasks/:id" element={<TaskDetailPage />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
     </main>
+    </div>
   )
 }
 
