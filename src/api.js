@@ -15,13 +15,13 @@ export async function fetchTasks() {
 
 export async function fetchTask(id) {
     const response = await fetch(`${API_URL}/todos/${id}`)
-    if (response.status === 404) {throw new Error(`is no task with ID "${id}".`)}
+    if (response.status === 404) {throw new Error(`There is no task with ID "${id}".`)}
     if (!response.ok) {throw new Error(`The server responded with status ${response.status}.`)}
     return response.json()
 }
 
 export async function fetchUser(id) {
     const response = await fetch(`${API_URL}/users/${id}`)
-    if (!response.ok) {throw new Error(`The server responsed with status ${response.status}.`)}
-    return response.json
+    if (!response.ok) {throw new Error(`The server responded with status ${response.status}.`)}
+    return response.json()
 }

@@ -9,7 +9,7 @@ import TasksPage from './pages/TasksPage.jsx'
 function App () {
   return (
     <div className="min-h-screen bg-slate-50 text-slate-900"><NavBar />
-    <main>
+    <main className="mx-auto max-w-5xl px-4 py-8 sm:px-6">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/tasks" element={<TasksPage />} />
