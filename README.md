@@ -105,9 +105,17 @@ Accessibility basics:
 
 ![Task detail page with owner card](docs/screenshots/task-detail.png)
 
+#### Task detail with an unknown ID (`/tasks/9999`)
+
+![Error message for a task ID that does not exist](docs/screenshots/page-not-found-9999.png)
+
 #### About (`/about`)
 
 ![About page](docs/screenshots/about.png)
+
+#### Page not found (`*`: any other address, such as `/nope`)
+
+![404 page with a Go home link](docs/screenshots/page-not-found.png)
 
 #### Mobile
 
