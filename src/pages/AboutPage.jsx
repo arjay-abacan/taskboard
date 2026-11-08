@@ -13,6 +13,10 @@ function AboutPage() {
           <li>TanStack Query for loading data from the API</li>
           <li>Tailwind CSS for the styling</li>
         </ul>
+        <h2 className="mt-8 text-xl font-semibold">Developer</h2>
+        <p className="mt-4 text-slate-700">
+          ARJAY M. ABACAN | November 2026
+        </p>
       </section>
     )
   }
